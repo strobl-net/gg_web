@@ -92,7 +92,6 @@ class _SingleSurveyPageState extends State<SingleSurveyPage> {
 
   bool checkCorrect() {
     for (var i=0; i<this.survey["questions"].length; i++) {
-      print(i);
       if (this.survey["questions"][i]["type"] == "text" || this.survey["questions"][i]["type"] == "number"){
         if (this.surveyAnswers[i] == ""){
           return false;

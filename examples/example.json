@@ -1,0 +1,68 @@
+[
+    {
+        "type": "text",
+        "question": "What is your favorite music?", 
+        "required": true, 
+        "description": "", 
+        "result_type": "string"
+    }, 
+    {
+        "type": "number", 
+        "question": "What is your age?", 
+        "required": true, 
+        "description": "", 
+        "result_type": "string"
+    }, 
+    {
+        "type": "radio", 
+        "options": [
+            {"name": "male", "value": 0}, 
+            {"name": "female", "value": 1}, 
+            {"name": "other", "value": 2}
+        ], 
+        "question": "Please select your gender", 
+        "required": true, 
+        "description": "", 
+        "result_type": "int"
+    }, 
+    {
+        "type": "radio", 
+        "options": [
+            {"name": "5-7", "value": 0}, 
+            {"name": "8-10", "value": 1},
+            {"name": "11-12", "value": 2}
+        ], 
+        "question": "Please select your grade", 
+        "required": false, 
+        "description": "", 
+        "result_type": "int"
+    },
+    {
+        "type": "radio", 
+        "options": [
+            {"name": "iOS", "value": 0}, 
+            {"name": "Android", "value": 1},
+            {"name": "Windows", "value": 2},
+            {"name": "Linux", "value": 3},
+            {"name": "Other", "value": 4}
+        ],
+        "question": "Pick one!", 
+        "required": true, 
+        "description": "", 
+        "result_type": "int"
+    },
+    {
+        "type": "radio", 
+        "options": [
+            {"name": "Spaghetti", "value": 0}, 
+            {"name": "Chicken", "value": 1},
+            {"name": "Salad", "value": 2},
+            {"name": "Carrots", "value": 3},
+            {"name": "I don't eat", "value": 4}
+        ],
+        "question": "Pick one", 
+        "required": true, 
+        "description": "", 
+        "result_type": "int"
+    }
+]

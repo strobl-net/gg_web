@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
       _isLoading = true,
     });
     var baseUrl = env.environment['baseUrl'];
-    final url = "$baseUrl/api/profiles/" + sharedPreferences.getString('user.id');
+    final url = "$baseUrl/api/profiles/" + sharedPreferences.getString('user.id') + "/";
     final response = await http.get(
       url,
       headers: {

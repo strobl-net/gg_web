@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gg_app/.env.dart' as env;
+import 'package:photo_view/photo_view.dart';
 
 
 class MensaPage extends StatefulWidget {
@@ -12,18 +14,13 @@ class _MensaPageState extends State<MensaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Mensa"),
+        title: Text("Menus"),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Mensa feature will be added soon',
-            ),
-          ],
-        ),
-      ),
+      body: new Container(
+        child: new PhotoView(
+        imageProvider:  new NetworkImage(env.environment["mensaUrl"].toString())
+        )
+      )
     );
   }
 }

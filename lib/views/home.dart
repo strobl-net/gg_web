@@ -1,13 +1,9 @@
-import 'dart:convert';
-import 'dart:io';
 import 'package:gg_app/views/users.dart';
-import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:gg_app/views/surveys.dart';
 import 'package:gg_app/views/mensa.dart';
 import 'package:gg_app/views/auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:gg_app/.env.dart' as env;
 
 
 class HomePage extends StatefulWidget {
